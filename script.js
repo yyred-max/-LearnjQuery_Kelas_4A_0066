@@ -24,7 +24,9 @@ btntambah.addEventListener("click",function() {
     tombolHapus.className = "hapus";
     tombolHapus.onclick = function() {
         listbaru.remove();
-    }
+    };
+
+    listbaru.appendChild(tombolHapus);
 
 
     daftarTugas.appendChild(listbaru);
