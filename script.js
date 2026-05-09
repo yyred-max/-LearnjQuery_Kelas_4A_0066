@@ -19,6 +19,12 @@ btntambah.addEventListener("click",function() {
 
     listbaru.appendChild(spanbaru);
 
+    // Menambahkan tombol edit
+    let tombolEdit = document.createElement("button");
+
+
+
+    // Menambahkan tombol hapus
     let tombolHapus = document.createElement("button"); 
     tombolHapus.textContent = "Hapus";
     tombolHapus.className = "hapus";
@@ -40,6 +46,6 @@ btntambah.addEventListener("click",function() {
         }
     });
 
-    inputTugas.Value = "";
+    inputTugas.value = "";
 
 });
