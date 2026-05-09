@@ -36,9 +36,23 @@ function editTugas(listbaru) {
     listbaru.replaceChild(inputEdit, spanTugas);
     inputEdit.focus();
 
+    function simpan() {
+        let teksBaru = inputEdit.value.trim();
+        if (teksBaru === "") {
+            alert("Data Harus Dimasukkan!");
+            teksBaru = teksLama;
+        }
+        
 
+    }
+
+    inputEdit.addEventListener("blur", simpan);
+    inputEdit.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") simpan();
+    });
 
 }
+
     
 
 
