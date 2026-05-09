@@ -20,6 +20,7 @@ btntambah.addEventListener("click",function() {
     listbaru.appendChild(spanbaru);
 
     let tombolHapus = document.createElement("button"); 
+    tombolHapus.textContent = "Hapus";
 
 
     daftarTugas.appendChild(listbaru);
