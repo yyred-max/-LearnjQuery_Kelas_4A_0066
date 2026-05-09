@@ -31,6 +31,8 @@ function editTugas(listbaru) {
     let spanTugas = listbaru.querySelector("span");
     let teksLama = spanTugas.innerHTML;
     let inputEdit = document.createElement("input");
+    inputEdit.type = "text";
+    inputEdit.value = teksLama;
 }
     
 
