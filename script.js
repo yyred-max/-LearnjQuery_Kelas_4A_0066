@@ -26,6 +26,12 @@ btntambah.addEventListener("click",function() {
     tombolEdit.onclick = function () {
        editTugas(listbaru);
     };
+
+function editTugas(listbaru) {
+    let spanTugas = listbaru.querySelector("span");
+    
+
+}
     
 
 
