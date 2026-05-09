@@ -33,6 +33,9 @@ function editTugas(listbaru) {
     let inputEdit = document.createElement("input");
     inputEdit.type = "text";
     inputEdit.value = teksLama;
+    inputEdit.style.flex = "1";
+    inputEdit.style.padding = "4px";
+    inputEdit.style.marginRight = "5px";
     listbaru.replaceChild(inputEdit, spanTugas);
     inputEdit.focus();
 
