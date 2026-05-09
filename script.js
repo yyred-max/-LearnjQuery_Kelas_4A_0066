@@ -22,6 +22,9 @@ btntambah.addEventListener("click",function() {
     let tombolHapus = document.createElement("button"); 
     tombolHapus.textContent = "Hapus";
     tombolHapus.className = "hapus";
+    tombolHapus.onclick = function() {
+        
+    }
 
 
     daftarTugas.appendChild(listbaru);
