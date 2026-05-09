@@ -25,6 +25,7 @@ btntambah.addEventListener("click",function() {
     tombolEdit.className = "edit";
     tombolEdit.onclick = function () {
         let spanTugas = listbaru.querySelector("span");
+        let teksLama = spanTugas.innerHTML;
     }
     
 
