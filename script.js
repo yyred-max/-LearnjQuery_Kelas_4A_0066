@@ -23,7 +23,7 @@ btntambah.addEventListener("click",function() {
     tombolHapus.textContent = "Hapus";
     tombolHapus.className = "hapus";
     tombolHapus.onclick = function() {
-        
+        listbaru.remove();
     }
 
 
