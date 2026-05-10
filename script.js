@@ -20,6 +20,12 @@ btntambah.addEventListener("click",function() {
 
     listbaru.appendChild(spanbaru);
 
+    // Menampilkan tanggal
+    let spanTanggal = document.createElement("span");
+    spanTanggal.innerHTML = teksTanggal ? teksTanggal : "Tanpa tanggal";
+    spanTanggal.style.color = "#6b7280";
+    listbaru.appendChild(spanTanggal);
+
     // status tugas
     let spanStatus = document.createElement("span");
     spanStatus.innerHTML = "Pending";
@@ -54,7 +60,7 @@ btntambah.addEventListener("click",function() {
 
 
 function editTugas(listbaru) {
-    let spanTugas = listbaru.querySelector("span");
+    let spanTugas = listbaru.querySelector("span: first-child");
     let teksLama = spanTugas.innerHTML;
     let inputEdit = document.createElement("input");
     inputEdit.type = "text";
