@@ -23,6 +23,19 @@ btntambah.addEventListener("click",function() {
     let spanStatus = document.createElement("span");
     spanStatus.innerHTML = "Pending";
     listbaru.appendChild(spanStatus);
+
+    // Tombol Progress
+    let tombolProgress = document.createElement("button");
+    tombolProgress.textContent = "Progress";
+    tombolProgress.style.cursor = "pointer";
+    tombolProgress.onclick = function() {
+        spanStatus.innerHTML = "Progress";
+        spanStatus.style.backgroundColor = "#facc15";
+    };
+
+    // 
+
+
     
 
     // Menambahkan tombol edit
