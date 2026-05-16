@@ -41,13 +41,13 @@ $("#btntambah").on("click", function() {
     listbaru.append(tombolProgress);
 
     // Tombol Done 
-    let tombolDone = document.createElement("button");
-    tombolDone.textContent = "Done";
-    tombolDone.onclick = function() {
-        spanStatus.innerHTML = "Done";
-        spanStatus.style.backgroundColor = "#22c55e";
-    };
-    listbaru.appendChild(tombolDone);
+    let tombolDone = $("button");
+    tombolDone.text("Done");
+    tombolDone.on("click", function() {
+        spanStatus.HTML("Done");
+        spanStatus.css("backgroundColor", "#22c55e");
+    });
+    listbaru.append(tombolDone);
 
     // Menambahkan tombol edit
     let tombolEdit = document.createElement("button");
