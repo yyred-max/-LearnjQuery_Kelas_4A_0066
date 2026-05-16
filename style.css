@@ -17,12 +17,13 @@ input{
 }
 
 button {
-    padding: 10px 14px;
+    padding: 4px 12px;
     border: none;
     background: #4f46e5;
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    width: auto;
 }
 
 button.edit:hover{
@@ -32,11 +33,6 @@ button.edit:hover{
 button.hapus:hover {
     background-color: #8b0101;
 }
-
-
-
-
-
 
 li {
     margin-top: 10px;
@@ -78,16 +74,6 @@ input[type="date"] {
     background-color: #2563eb;
 }
 
-/* #daftarTugas li {
-    background-color: white;
-    margin: 8px 0;
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-} */
 
 
 
