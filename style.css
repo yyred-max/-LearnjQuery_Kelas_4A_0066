@@ -92,6 +92,14 @@ body {
     flex-wrap: wrap;
 }
 
+#daftarTugas li span {
+    margin-right: 12px;
+}
+
+#daftarTugas li button {
+    margin: 0 4px;
+}
+
 
 
 
