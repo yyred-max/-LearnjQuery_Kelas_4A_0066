@@ -50,12 +50,12 @@ $("#btntambah").on("click", function() {
     listbaru.append(tombolDone);
 
     // Menambahkan tombol edit
-    let tombolEdit = document.createElement("button");
-    tombolEdit.textContent = "Edit";
-    tombolEdit.className = "edit";
-    tombolEdit.onclick = function () {
+    let tombolEdit = $("button");
+    tombolEdit.text("Edit");
+    tombolEdit.addClass("edit");
+    tombolEdit.on("click", function () {
        editTugas(listbaru);
-    };
+    });
 
 
 function editTugas(listbaru) {
