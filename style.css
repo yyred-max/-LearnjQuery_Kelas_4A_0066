@@ -25,9 +25,14 @@ button {
     cursor: pointer;
 }
 
-button:hover{
-    background: #4338ca;
+button.edit:hover{
+    background: #f59e0b;
 }
+
+
+
+
+
 
 li {
     margin-top: 10px;
@@ -80,15 +85,6 @@ input[type="date"] {
     flex-wrap: wrap;
 } */
 
-button {
-    background-color: #e5e7eb;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: 0.2s;
-}
 
 
 
