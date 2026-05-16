@@ -69,5 +69,29 @@ input[type="date"] {
     background-color: #2563eb;
 }
 
+/* #daftarTugas li {
+    background-color: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+} */
+
+button {
+    background-color: #e5e7eb;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+
+
+
 
 
