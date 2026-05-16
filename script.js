@@ -4,7 +4,7 @@ const btntambah = $("#btnTambah");
 const daftarTugas = $("#daftarTugas");
 const warnabaru = $("li");
 
-$("#btntambah").on("click", function() {
+$("#btnTambah").on("click", function() {
     let teksTugas = $("#inputTugas").val();
     let teksTanggal = $("inputTanggal").val();
 
