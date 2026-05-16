@@ -34,10 +34,10 @@ $("#btnTambah").on("click", function() {
     // Tombol Progress
     let tombolProgress = $("<button>");
     tombolProgress.text("Progress");
-    tombolProgress.css("pointer");
+    tombolProgress.css("cursor", "pointer");
     tombolProgress.on("click", function() {
         spanStatus.html("Progress");
-        spanStatus.css("backgroundColor", "#facc15");
+        spanStatus.css("background-color", "#facc15");
     });
     listbaru.append(tombolProgress);
 
@@ -46,7 +46,7 @@ $("#btnTambah").on("click", function() {
     tombolDone.text("Done");
     tombolDone.on("click", function() {
         spanStatus.html("Done");
-        spanStatus.css("backgroundColor", "#22c55e");
+        spanStatus.css("background-color", "#22c55e");
     });
     listbaru.append(tombolDone);
 
@@ -60,12 +60,12 @@ $("#btnTambah").on("click", function() {
 
 
 function editTugas(listbaru) {
-    let spanTugas = listbaru.find("span: first-child");
-    let teksLama = spanTugas.html();
-    let inputEdit = $("input");
-    inputEdit.attr("text");
+    let spanTugas = listbaru.find("span:first-child");
+    let teksLama = spanTugas.text();
+    let inputEdit = $("<input>");
+    inputEdit.attr("type", "text");
     inputEdit.val("teksLama");
-    listbaru.replaceChild(inputEdit);
+    listbaru.replaceWith(inputEdit);
     inputEdit.focus();
 
     function simpan() {
