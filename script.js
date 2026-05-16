@@ -6,7 +6,7 @@ const warnabaru = $("li");
 
 $("#btnTambah").on("click", function() {
     let teksTugas = $("#inputTugas").val();
-    let teksTanggal = $("inputTanggal").val();
+    let teksTanggal = $("#inputTanggal").val();
 
     if(teksTugas === "") {
         alert("Data harus dimasukkan!");
@@ -16,42 +16,42 @@ $("#btnTambah").on("click", function() {
     let listbaru = $("<li>");
     let spanbaru = $("<span>");
 
-    spanbaru.HTML(teksTugas);
+    spanbaru.html(teksTugas);
 
     listbaru.append(spanbaru);
 
     // Menampilkan tanggal
     let spanTanggal = $("<span>");
-    spanTanggal.HTML(teksTanggal ? teksTanggal : "Tanpa tanggal");
-    spanTanggal.css(color, "#6b7280");
+    spanTanggal.html(teksTanggal ? teksTanggal : "Tanpa tanggal");
+    spanTanggal.css("color", "#6b7280");
     listbaru.append(spanTanggal);
 
     // status tugas
     let spanStatus = $("<span>");
-    spanStatus.HTML("Pending");
+    spanStatus.html("Pending");
     listbaru.append(spanStatus);
 
     // Tombol Progress
-    let tombolProgress = $("button");
+    let tombolProgress = $("<button>");
     tombolProgress.text("Progress");
     tombolProgress.css("pointer");
     tombolProgress.on("click", function() {
-        spanStatus.HTML("Progress");
+        spanStatus.html("Progress");
         spanStatus.css("backgroundColor", "#facc15");
     });
     listbaru.append(tombolProgress);
 
     // Tombol Done 
-    let tombolDone = $("button");
+    let tombolDone = $("<button>");
     tombolDone.text("Done");
     tombolDone.on("click", function() {
-        spanStatus.HTML("Done");
+        spanStatus.html("Done");
         spanStatus.css("backgroundColor", "#22c55e");
     });
     listbaru.append(tombolDone);
 
     // Menambahkan tombol edit
-    let tombolEdit = $("button");
+    let tombolEdit = $("<button>");
     tombolEdit.text("Edit");
     tombolEdit.addClass("edit");
     tombolEdit.on("click", function () {
@@ -61,7 +61,7 @@ $("#btnTambah").on("click", function() {
 
 function editTugas(listbaru) {
     let spanTugas = listbaru.find("span: first-child");
-    let teksLama = spanTugas.HTML();
+    let teksLama = spanTugas.html();
     let inputEdit = $("input");
     inputEdit.attr("text");
     inputEdit.val("teksLama");
@@ -75,7 +75,7 @@ function editTugas(listbaru) {
             teksBaru = teksLama;
         }
         let spanBaru = $("span");
-        spanBaru.HTML("teksBaru");
+        spanBaru.html("teksBaru");
         listbaru.replaceChild(spanBaru);
     }
 
@@ -91,7 +91,7 @@ function editTugas(listbaru) {
 
 
     // Menambahkan tombol hapus
-    let tombolHapus = $("button"); 
+    let tombolHapus = $("<button>"); 
     tombolHapus.text("Hapus");
     tombolHapus.addClass("hapus");
     tombolHapus.on("click", function() {
