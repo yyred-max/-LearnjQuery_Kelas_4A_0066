@@ -2,6 +2,7 @@
 const inputTugas = $("#inputTugas");
 const btntambah = $("#btnTambah");
 const daftarTugas = $("#daftarTugas");
+const warnabaru = $("li");
 
 $("#btntambah").on("click", function() {
     let teksTugas = $("#inputTugas").val();
@@ -102,15 +103,15 @@ function editTugas(listbaru) {
 
     daftarTugas.append(listbaru);
 
-    const warnabaru = document.querySelectorAll("li");
-    warnabaru.forEach((item, index) => {
+  
+    warnabaru.each(function (index)  {
         if(index % 2 === 0) {
-            item.style.color = "red";
+            $(this).css("color", "red");
         } else {
-            item.style.color = "green";
+            $(this).css("color", "green");
         }
     });
 
-    inputTugas.value = "";
+    inputTugas.val = "";
 
 });
