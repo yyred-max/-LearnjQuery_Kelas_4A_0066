@@ -73,8 +73,7 @@ function editTugas(listbaru) {
             alert("Data Harus Dimasukkan!");
             teksBaru = teksLama;
         }
-        let spanBaru = $("<span>");
-        spanBaru.html(teksBaru);
+        let spanBaru = $("<span>").html(teksBaru);
         inputEdit.replaceWith(spanBaru);
     }
 
