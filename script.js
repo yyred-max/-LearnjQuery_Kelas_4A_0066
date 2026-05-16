@@ -59,15 +59,12 @@ $("#btntambah").on("click", function() {
 
 
 function editTugas(listbaru) {
-    let spanTugas = listbaru.querySelector("span: first-child");
-    let teksLama = spanTugas.innerHTML;
-    let inputEdit = document.createElement("input");
-    inputEdit.type = "text";
-    inputEdit.value = teksLama;
-    inputEdit.style.flex = "1";
-    inputEdit.style.padding = "4px";
-    inputEdit.style.marginRight = "5px";
-    listbaru.replaceChild(inputEdit, spanTugas);
+    let spanTugas = listbaru.find("span: first-child");
+    let teksLama = spanTugas.HTML();
+    let inputEdit = $("input");
+    inputEdit.attr("text");
+    inputEdit.val("teksLama");
+    listbaru.replaceChild(inputEdit);
     inputEdit.focus();
 
     function simpan() {
