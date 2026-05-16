@@ -3,12 +3,11 @@ const inputTugas = $("#inputTugas");
 const btntambah = $("#btnTambah");
 const daftarTugas = $("#daftarTugas");
 
-btntambah.addEventListener("click",function() {
+$("#btntambah").on("click", function() {
+    let teksTugas = $("#inputTugas").val();
+    let teksTanggal = $("inputTanggal").val();
 
-    let teksTugas = inputTugas.value;
-    let teksTanggal = inputTanggal.value;
-
-    if(teksTugas === ""){
+    if(teksTugas === "") {
         alert("Data harus dimasukkan!");
         return;
     }
