@@ -12,8 +12,8 @@ $("#btntambah").on("click", function() {
         return;
     }
 
-    let listbaru = document.createElement("li");
-    let spanbaru = document.createElement("span");
+    let listbaru = $("<li>");
+    let spanbaru = $("<span>");
 
     spanbaru.innerHTML = teksTugas;
 
