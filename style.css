@@ -28,6 +28,7 @@ button {
 
 button.edit:hover{
     background: #f59e0b;
+    color: white;
 }
 
 button.hapus:hover {
