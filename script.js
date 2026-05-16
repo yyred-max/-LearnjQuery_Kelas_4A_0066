@@ -1,7 +1,7 @@
 
-const inputTugas = document.getElementById("inputTugas");
-const btntambah = document.getElementById("btnTambah");
-const daftarTugas = document.getElementById("daftarTugas");
+const inputTugas = $("#inputTugas");
+const btntambah = $("#btnTambah");
+const daftarTugas = $("#daftarTugas");
 
 btntambah.addEventListener("click",function() {
 
