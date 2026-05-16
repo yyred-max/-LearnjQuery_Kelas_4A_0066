@@ -26,9 +26,9 @@ $("#btntambah").on("click", function() {
     listbaru.append(spanTanggal);
 
     // status tugas
-    let spanStatus = document.createElement("span");
-    spanStatus.innerHTML = "Pending";
-    listbaru.appendChild(spanStatus);
+    let spanStatus = $("<span>");
+    spanStatus.HTML("Pending");
+    listbaru.append(spanStatus);
 
     // Tombol Progress
     let tombolProgress = document.createElement("button");
