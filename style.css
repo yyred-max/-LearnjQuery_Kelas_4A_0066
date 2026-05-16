@@ -85,6 +85,13 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+#daftarTugas {
+    margin-bottom: 5px;
+    padding: 0px 6px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
 
 
 
