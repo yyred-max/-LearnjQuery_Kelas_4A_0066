@@ -17,7 +17,7 @@ $("#btntambah").on("click", function() {
 
     spanbaru.HTML(teksTugas);
 
-    listbaru.appendChild(spanbaru);
+    listbaru.append(spanbaru);
 
     // Menampilkan tanggal
     let spanTanggal = document.createElement("span");
