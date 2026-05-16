@@ -20,10 +20,10 @@ $("#btntambah").on("click", function() {
     listbaru.append(spanbaru);
 
     // Menampilkan tanggal
-    let spanTanggal = document.createElement("span");
-    spanTanggal.innerHTML = teksTanggal ? teksTanggal : "Tanpa tanggal";
-    spanTanggal.style.color = "#6b7280";
-    listbaru.appendChild(spanTanggal);
+    let spanTanggal = $("<span>");
+    spanTanggal.HTML(teksTanggal ? teksTanggal : "Tanpa tanggal");
+    spanTanggal.css(color, "#6b7280");
+    listbaru.append(spanTanggal);
 
     // status tugas
     let spanStatus = document.createElement("span");
