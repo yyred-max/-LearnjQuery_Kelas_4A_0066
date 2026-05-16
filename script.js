@@ -2,7 +2,6 @@
 const inputTugas = $("#inputTugas");
 const btntambah = $("#btnTambah");
 const daftarTugas = $("#daftarTugas");
-const warnabaru = $("li");
 
 $("#btnTambah").on("click", function() {
     let teksTugas = $("#inputTugas").val();
@@ -64,19 +63,19 @@ function editTugas(listbaru) {
     let teksLama = spanTugas.text();
     let inputEdit = $("<input>");
     inputEdit.attr("type", "text");
-    inputEdit.val("teksLama");
-    listbaru.replaceWith(inputEdit);
+    inputEdit.val(teksLama);
+    spanTugas.replaceWith(inputEdit);
     inputEdit.focus();
 
     function simpan() {
-        let teksBaru = inputEdit.val.trim();
+        let teksBaru = inputEdit.val().trim();
         if (teksBaru === "") {
             alert("Data Harus Dimasukkan!");
             teksBaru = teksLama;
         }
-        let spanBaru = $("span");
-        spanBaru.html("teksBaru");
-        listbaru.replaceChild(spanBaru);
+        let spanBaru = $("<span>");
+        spanBaru.html(teksBaru);
+        listbaru.replaceWith(spanBaru);
     }
 
     inputEdit.on("blur", simpan);
@@ -103,8 +102,7 @@ function editTugas(listbaru) {
 
     daftarTugas.append(listbaru);
 
-  
-    warnabaru.each(function (index)  {
+    $("li").each(function(index) {
         if(index % 2 === 0) {
             $(this).css("color", "red");
         } else {
@@ -112,6 +110,6 @@ function editTugas(listbaru) {
         }
     });
 
-    inputTugas.val = ("");
+    inputTugas.val("");
 
 });
