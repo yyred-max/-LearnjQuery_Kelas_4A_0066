@@ -31,14 +31,14 @@ $("#btntambah").on("click", function() {
     listbaru.append(spanStatus);
 
     // Tombol Progress
-    let tombolProgress = document.createElement("button");
-    tombolProgress.textContent = "Progress";
-    tombolProgress.style.cursor = "pointer";
-    tombolProgress.onclick = function() {
-        spanStatus.innerHTML = "Progress";
-        spanStatus.style.backgroundColor = "#facc15";
-    };
-    listbaru.appendChild(tombolProgress);
+    let tombolProgress = $("button");
+    tombolProgress.text("Progress");
+    tombolProgress.css("pointer");
+    tombolProgress.on("click", function() {
+        spanStatus.HTML("Progress");
+        spanStatus.css("backgroundColor", "#facc15");
+    });
+    listbaru.append(tombolProgress);
 
     // Tombol Done 
     let tombolDone = document.createElement("button");
