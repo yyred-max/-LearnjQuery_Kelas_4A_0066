@@ -90,17 +90,17 @@ function editTugas(listbaru) {
 
 
     // Menambahkan tombol hapus
-    let tombolHapus = document.createElement("button"); 
-    tombolHapus.textContent = "Hapus";
-    tombolHapus.className = "hapus";
-    tombolHapus.onclick = function() {
+    let tombolHapus = $("button"); 
+    tombolHapus.text("Hapus");
+    tombolHapus.addClass("hapus");
+    tombolHapus.on("click", function() {
         listbaru.remove();
-    };
+    });
 
-    listbaru.appendChild(tombolHapus);
+    listbaru.append(tombolHapus);
 
 
-    daftarTugas.appendChild(listbaru);
+    daftarTugas.append(listbaru);
 
     const warnabaru = document.querySelectorAll("li");
     warnabaru.forEach((item, index) => {
