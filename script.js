@@ -15,7 +15,7 @@ $("#btntambah").on("click", function() {
     let listbaru = $("<li>");
     let spanbaru = $("<span>");
 
-    spanbaru.innerHTML = teksTugas;
+    spanbaru.HTML(teksTugas);
 
     listbaru.appendChild(spanbaru);
 
