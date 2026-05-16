@@ -73,9 +73,9 @@ function editTugas(listbaru) {
             alert("Data Harus Dimasukkan!");
             teksBaru = teksLama;
         }
-        let spanBaru = document.createElement("span");
-        spanBaru.innerHTML = teksBaru;
-        listbaru.replaceChild(spanBaru, inputEdit);
+        let spanBaru = $("span");
+        spanBaru.HTML("teksBaru");
+        listbaru.replaceChild(spanBaru);
     }
 
     inputEdit.addEventListener("blur", simpan);
