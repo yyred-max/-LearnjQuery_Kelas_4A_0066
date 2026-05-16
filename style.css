@@ -68,6 +68,15 @@ input[type="date"] {
     background-color: #2563eb;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    background-color: #f1f5f9;
+}
+
 
 
 
