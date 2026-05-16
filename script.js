@@ -78,14 +78,14 @@ function editTugas(listbaru) {
         listbaru.replaceChild(spanBaru);
     }
 
-    inputEdit.addEventListener("blur", simpan);
-    inputEdit.addEventListener("keypress", function(e) {
+    inputEdit.on("blur", simpan);
+    inputEdit.on("keypress", function(e) {
         if (e.key === "Enter") simpan();
     });
 
     }
 
-    listbaru.appendChild(tombolEdit);
+    listbaru.append(tombolEdit);
 
 
 
