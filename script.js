@@ -69,7 +69,7 @@ function editTugas(listbaru) {
     inputEdit.focus();
 
     function simpan() {
-        let teksBaru = inputEdit.value.trim();
+        let teksBaru = inputEdit.val.trim();
         if (teksBaru === "") {
             alert("Data Harus Dimasukkan!");
             teksBaru = teksLama;
@@ -112,6 +112,6 @@ function editTugas(listbaru) {
         }
     });
 
-    inputTugas.val = "";
+    inputTugas.val = ("");
 
 });
