@@ -75,7 +75,7 @@ function editTugas(listbaru) {
         }
         let spanBaru = $("<span>");
         spanBaru.html(teksBaru);
-        listbaru.replaceWith(spanBaru);
+        inputEdit.replaceWith(spanBaru);
     }
 
     inputEdit.on("blur", simpan);
